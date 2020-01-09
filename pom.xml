@@ -16,8 +16,11 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
+    <!--定义Hadoop版本-->
+    <hadoop.version>2.6.0-cdh5.15.1</hadoop.version>
   </properties>
 
+  <!--引入CDH的仓库-->
   <repositories>
     <repository>
       <id>cloudera</id>
@@ -35,9 +38,10 @@
     </dependency>
 
     <dependency>
+      <!--添加Hadoop的依赖包-->
       <groupId>org.apache.hadoop</groupId>
       <artifactId>hadoop-client</artifactId>
-      <version>2.6.0-cdh5.15.1</version>
+      <version>${hadoop.version}</version>
     </dependency>
   </dependencies>
 
