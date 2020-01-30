@@ -116,8 +116,8 @@ public class HdfsApp {
 
     @Test
     public void copyToLocal() throws IOException {
-        Path src = new Path("/hdfsapi1/test/mmm2.txt");
-        Path dst = new Path("/Users/xuepipi/Documents/");
+        Path src = new Path("/access/input/access.log");
+        Path dst = new Path("/Users/xuepipi/Desktop/mhpExercise/hadoop-v1/access/input");
         fileSystem.copyToLocalFile(src, dst);
     }
 
